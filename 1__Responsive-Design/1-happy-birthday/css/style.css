@@ -1,0 +1,125 @@
+/*
+ * General Styles
+*/
+
+
+body {
+  background: #DDD;
+  font-family: 'Open Sans', arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url(../images/space-background.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.d-flex{
+  display: flex;
+}
+
+.d-col{
+  flex-direction: column;
+}
+
+.d-rowr{
+  flex-direction: row-reverse;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.align-top{
+  align-items: start;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul li {
+  list-style: decimal inside;
+}
+
+/*
+ * Heading Styles
+*/
+
+
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  color: #e22f8f;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/*
+ * Container Styles
+*/
+
+main, .container{
+  background: #FFF;
+}
+
+main > section:nth-child(odd){
+  background: rgb(218, 206, 206);
+  width: 100%;
+}
+
+main > section:first-child{
+  padding: unset;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.container p{
+  text-align: justify;
+  margin-right: 30px;
+}
+
+main > section{
+  width: fit-content;
+  padding: 40px 50px;
+}
+
+/* Ctn 3 */
+address{
+  max-width: 150px;
+  margin: 0px auto 20px;
+}
+
+.contact + div{
+  column-gap: 30px;
+} 
