@@ -1,74 +1,70 @@
-
-/* Mobile Styles (x <= 480px)* */
-/* Example: styles for screens up to 480px wide and below */
+/* Mobile Styles (up to 480px wide) */
 @media screen and (max-width: 480px) {
-  /* Insert your mobile-specific CSS styles here */
-    /* Ctn 2 */
-
-    img:first-child{
-      max-width: 100%;
-    }
+  /* Insert mobile-specific CSS styles here */
 }
 
-/* Tablet Styles (x <= 768px)*/
-/* Example: styles for screens less than 768px */
+/* Tablet Styles (up to 768px wide) */
 @media screen and (max-width: 768px) {
-  main > section{
+  img:first-child {
+    max-width: 100%;
+  }
+
+  main > section {
     width: fit-content;
-    padding: 40px 40px;
+    padding: 40px;
   }
 
-  .container p{
+  .container p {
     text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
-  .container img{
+  .container img {
     max-width: 100px;
     margin: 0 auto;
   }
 
-  .d-rowr{
+  .d-rowr {
     flex-direction: column;
   }
 
+  .contact + div {
+    flex-direction: column;
+  }
 
+  .contact + div > img:first-child {
+    margin: 0 auto 20px;
+    max-width: 40%;
+  }
 }
 
-
-/* Desktop Styles */
-/* Example: styles for screens wider than 768px */
+/* Desktop Styles (screens wider than 768px) */
 @media screen and (min-width: 769px) {
-  /* Insert your desktop-specific CSS styles here */
-  .align-top{
+  .align-top {
     align-items: center;
   }
 
-  main > section{
+  main > section {
     width: fit-content;
-    padding: 40px 50px;
+    padding: 40px;
   }
 
-  .container img{
+  .container img {
     max-height: 225px;
     margin: auto 0;
   }
 
-  p{
+  p {
     margin-bottom: 20px;
   }
-
 }
 
-/* Larger Desktop Styles */
-/* Example: styles for screens wider than 1200px */
+/* Larger Desktop Styles (screens wider than 1200px) */
 @media screen and (min-width: 1201px) {
-  /* Insert your larger desktop-specific CSS styles here */
-
-
   /* ctn:1 | Images */
-  main, .img-ctn, .img-ctn > img {
-    border-radius: 20px 20px 0 0 ;
+  main,
+  .img-ctn,
+  .img-ctn > img {
+    border-radius: 20px 20px 0 0;
   }
 }

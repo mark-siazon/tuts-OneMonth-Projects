@@ -1,10 +1,14 @@
-/*
- * General Styles
-*/
+:root {
+  --background-color: hsl(0, 0%, 86%);
+  --heading-color: hsl(324, 82%, 58%);
+  --container-background: hsl(0, 0%, 100%);
+  --odd-section-background: hsl(210, 8%, 90%);
+}
 
+/* General Styles */
 
 body {
-  background: #DDD;
+  background: var(--background-color);
   font-family: 'Open Sans', arial, sans-serif;
   display: flex;
   min-height: 100vh;
@@ -12,6 +16,7 @@ body {
   padding: 0;
   background: url(../images/space-background.png) no-repeat center;
   background-size: 100% 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -20,28 +25,27 @@ body {
   box-sizing: border-box; /* IE */
 }
 
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.d-col{
+.d-col {
   flex-direction: column;
 }
 
-.d-rowr{
+.d-rowr {
   flex-direction: row-reverse;
 }
 
-.flex-center{
+.flex-center {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.align-top{
+.align-top {
   align-items: start;
 }
-
 
 .clearfix:after {
   content: "";
@@ -63,40 +67,29 @@ ul li {
   list-style: decimal inside;
 }
 
-/*
- * Heading Styles
-*/
-
+/* Heading Styles */
 
 h1, h2 {
   font-family: 'Lobster', cursive;
-  color: #e22f8f;
+  color: var(--heading-color);
   text-align: center;
   margin-bottom: 32px;
-}
-
-h1 {
   font-size: 32px;
 }
 
-h2 {
-  font-size: 32px;
+/* Container Styles */
+
+main,
+.container {
+  background: var(--container-background);
 }
 
-/*
- * Container Styles
-*/
-
-main, .container{
-  background: #FFF;
-}
-
-main > section:nth-child(odd){
-  background: rgb(218, 206, 206);
+main > section:nth-child(odd) {
+  background: var(--odd-section-background);
   width: 100%;
 }
 
-main > section:first-child{
+main > section:first-child {
   padding: unset;
 }
 
@@ -104,22 +97,36 @@ main > section:first-child{
   max-width: 600px;
 }
 
-.container p{
+.container p {
   text-align: justify;
   margin-right: 30px;
 }
 
-main > section{
+main > section {
   width: fit-content;
   padding: 40px 50px;
 }
 
 /* Ctn 3 */
-address{
+address {
   max-width: 150px;
   margin: 0px auto 20px;
 }
 
-.contact + div{
+.contact + div {
   column-gap: 30px;
-} 
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (divides height by width) */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
