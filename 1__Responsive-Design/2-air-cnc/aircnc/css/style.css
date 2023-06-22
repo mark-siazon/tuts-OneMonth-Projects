@@ -6,6 +6,11 @@
   -moz-box-sizing: border-box; /* Firexfox */
   -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
   box-sizing: border-box; /* IE */
+
+  --clr-1: #DCE0E0;
+  --clr-2:#909597;
+  --clr-3: #666A6C;
+  --clr-4: #565A5C;
 }
 
 body {
@@ -43,6 +48,8 @@ strong {
   text-decoration: none;
   display: block;
   padding: 0.75rem 5rem;
+  border: unset;
+  border-top: 1px solid rgb(227, 25, 29);
   border-bottom: 1px solid rgb(227, 25, 29);
   border-radius: 2px;
   width: 95%;
@@ -50,3 +57,26 @@ strong {
 }
 
 
+/* nav styles */
+nav{
+  min-height: 50px;
+}
+
+nav div{
+  height: 50px;
+}
+
+nav a {
+  font-size: 1.75rem;
+  border-right: 2px solid var(--clr-1);
+
+}
+
+.profile{
+  /* width: 660px; */
+}
+
+.icons > aside img{
+  height: 25px;
+  margin-bottom: 5px;
+}
