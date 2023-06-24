@@ -1,4 +1,4 @@
-# 2__aircnc 
+# 2__AirCnC - Rent a Cat or Dog pt.1
 
 **Responsive Design Course - 2nd Website Challenge pt.1**
 
@@ -12,7 +12,16 @@
 
 ## Features
 
-- TBA
+- Responsive design for optimal viewing experience across different devices.
+- Engaging and visually appealing layout.
+- Detailed information about the dog and its owner.
+- Highlighted characteristics and icons to showcase the dog's traits.
+- `Booking option` to request a reservation (frontend-only).
+  - Static content without backend functionality.
+- `About section` providing insights into the dog's breed and characteristics.
+- `Care section` with details on diet, favorite toy, and check-in/check-out times.
+- `Games section` featuring the dog's favorite activities.
+- `Photo gallery` showcasing images of the dog.
 
 ## Getting Started
 
@@ -27,8 +36,9 @@ The project relies on the following dependencies:
 
 - CSS Reset: [`reset.css`](css/reset.css)
 - Custom CSS Styles: [`style.css`](css/style.css)
+- CSS Framework: **Bootstrap v5.2.3**
 - Responsive CSS Styles: [`media.css`](css/media.css)
-- Google Fonts: `Open Sans` (300, 700), `Lobster`
+- Google Fonts: `Open Sans` (400, 600, 700)
 
 ## Usage
 

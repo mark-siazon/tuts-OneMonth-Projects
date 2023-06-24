@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) /* MQ if: Screen 768px and below  */
+{
+  .text-justify {
+    text-align: justify;
+    text-indent: 2rem;
+  }
+}
+
+
+@media screen and (min-width:768px) /* MQ if: Screen 768px and below  */
+{
+  main > div.container {
+    max-width: 75%;
+  }
+}
+
