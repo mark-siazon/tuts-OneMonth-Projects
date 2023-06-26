@@ -1,0 +1,15 @@
+/*
+ * Footer
+ */
+footer {
+  position: absolute;
+  left: 0;
+  
+  width: 100vw;
+  background: $color-footer;
+  color: $color-accent;
+  text-align: center;
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  border-top: 1px solid $color-border;
+}

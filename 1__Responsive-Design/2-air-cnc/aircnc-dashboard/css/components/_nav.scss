@@ -1,0 +1,48 @@
+/*
+ * Header and Nav
+ */
+header {
+  background: $color-background;
+  border-bottom: 1px solid $color-border;
+  padding-right: 0.8rem;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  div.logo {
+    float: left;
+    display: block;
+    border-right: 1px solid $color-border;
+  }
+
+  nav {
+    ul {
+      float: right;
+      margin: 0;
+      padding: 0; /* Optional, to remove any default padding */
+  
+  
+      li {
+        border-left: 2px solid $color-border;
+        display: inline-block;
+        padding: 1.25rem 0;
+        min-height: 64.99px;
+        a {
+          padding: 1.5rem 2rem 1.6rem 1.25rem;
+          color: $color-text;
+          font-weight: 600;
+  
+          &:hover{
+            color: $color-link;
+            text-decoration: none
+          }
+        }
+  
+      }
+  
+    }
+  
+  
+  }
+}
