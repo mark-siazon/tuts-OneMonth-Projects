@@ -35,6 +35,21 @@ header nav ul li a:hover {
   color: hsl(353, 100%, 60%);
   text-decoration: none;
 }
+@media only screen and (min-width: 767px) {
+  header nav div.hamburger {
+    display: none;
+  }
+}
+header nav div.hamburger {
+  font-size: 2.25rem;
+  float: right;
+  padding: 10px;
+  margin-right: 5px;
+}
+header nav div.hamburger a.hamburger-icon:hover {
+  text-decoration: none;
+  color: hsl(185, 100%, 26%);
+}
 
 /*
  * Footer
@@ -150,6 +165,11 @@ a:hover {
   .container section.updates {
     width: 432.5px;
     margin: 25px 0 0 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container section.updates {
+    width: 430px;
   }
 }
 .container section.updates div.panel {
