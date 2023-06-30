@@ -1,13 +1,16 @@
+
 body {
     color: #3b3b3b;
-    margin: 50px 150px;
+    margin: 50px 25px;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
+
 
 h1 {
     font-size: 30px;
     font-weight: 200;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .panel {
@@ -15,15 +18,16 @@ h1 {
     font-size: 17px;
     font-weight: 200;
     border: 1px solid #f7f7f6;
+    
 }
 
 .question {
     padding: 15px;
-    background-color: #f7f7f6;
+    background-color: #e4eaef;
 }
 
 .question:hover {
-    color: #149ed8;
+    color: hsl(212, 50%, 59%);
 }
 
 .arrow {
@@ -37,6 +41,39 @@ h1 {
     padding: 25px;
 }
 
+.answer.collapse {
+    background: #eff6f9;
+    cursor: text;
+}
+
 .collapse {
     display: none;
+}
+
+main{
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    border: solid 1px hsla(0, 0%, 0%, 0.083);
+    min-width: 200px;
+    max-width: 1220px;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.bounce_in_animation {
+    text-align: left;
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+
+    
+    main{
+        padding: 1rem 2rem;
+    }
+
+
+    body {
+        margin: 50px 150px;
+    }
 }
