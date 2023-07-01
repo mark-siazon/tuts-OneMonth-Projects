@@ -1,0 +1,200 @@
+$primary-color: #3b3b3b;
+$background-color: #eeeeee;
+$border-color: #3b3b3b27;
+$text-color: #3b3b3b;
+$form-bg-color: #3b3b3b;
+$button-bg-color: #3b3b3b;
+$button-text-color: #fff;
+
+$breakpoints: (
+  "small": 425px,
+  "medium": 728px,
+  "large": 1024px,
+  "xlarge": 1440px
+);
+
+@mixin min-width($breakpoint) {
+  $width: map-get($breakpoints, $breakpoint);
+
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5vh;
+  min-height: 90vh;
+  background: rgb(5, 7, 22);
+}
+
+.container {
+  background: $background-color;
+  margin: 0 auto;
+  padding: 0 1.5rem 1.25rem;
+  border: 0.75px solid $border-color;
+  border-radius: 2px;
+
+  width: 70%;
+  max-width: 800px;
+  text-align: left;
+  color: $text-color;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  
+  h1{
+    text-align: center;
+  }
+
+  form {
+    outline: 0;
+    height: 35px;
+    margin: 0 0 5%;
+    border: 2px solid $form-bg-color;
+    border-radius: 2.5px;
+
+    input[type="text"] {
+      outline: 0;
+      border: none;
+      font-weight: normal;
+      width: 80%;
+      height: 32px;
+      font-size: 14px;
+      padding-left: 5px;
+      
+      // Styles for screens with a minimum width of 425px and above
+      @include min-width("small") {
+        width: 85.5%;
+        font-size: 18px;
+        padding-left: 10px;
+      }
+
+      // Styles for screens with a minimum width of 728px and above
+      @include min-width("medium") {
+        width: 87%;
+      }
+
+      @include min-width("large") {
+        width: 90%;
+      }
+      
+    }
+    
+    .add {
+      outline: 0;
+      background-color: #d7e9fb;
+      color: $button-bg-color;
+      cursor: pointer;
+
+      font-size: 14px;
+      width: 15%;
+      height: 35px;;
+
+      border: 0;
+      border-radius: unset;
+      margin: 0px;
+      float: right;
+
+      &:hover{
+        background-color: #d2e6fa;
+      }
+
+      @include min-width("small") {
+        width: 10.5%;
+        font-size: 18px;
+      }
+
+      @include min-width("large") {
+        width: 7.5%;
+      }
+
+    }
+  }
+
+  ul {
+    padding: 0;
+    text-align: left;
+    list-style: none;
+    margin-top: 60px;
+    
+    @include min-width("small") {
+      margin-top: 0px;
+    }
+    
+
+    hr {
+      border-bottom: 0;
+      margin: 15px 0;
+    }
+
+    input[type="checkbox"] {
+      width: 30px;
+
+      &:hover {
+        height: 14.25px;
+      }
+    }
+
+    .remove {
+      align-items: center;
+      cursor: pointer;
+    
+      &:hover {
+        font-size: larger;
+        color: rgb(164, 25, 25);
+        transition: all 0.3s ease;
+        animation: pulse 2.5s 2; /* Add animation property */
+      }
+
+      @keyframes pulse {
+        0% {
+          font-size: medium;
+          color: rgb(164, 25, 25);
+        }
+        50% {
+          font-size: larger;
+          color: rgb(209, 29, 29);
+        }
+        100% {
+          font-size: large;
+          color: rgb(164, 25, 25);
+        }
+      }
+    }
+    
+
+    .completed {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+
+    li div{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span {
+        flex-grow: 2;
+      }
+      
+    }
+  }
+}
+
+
+// Styles for screens with a minimum width of 425px and above
+@include min-width("small") {
+}
+
+// Styles for screens with a minimum width of 728px and above
+@include min-width("medium") {
+}
+
+// Styles for screens with a minimum width of 1024px and above
+@include min-width("large") {
+}
+
+// Styles for screens with a minimum width of 1440px and above
+@include min-width("xlarge") {
+}

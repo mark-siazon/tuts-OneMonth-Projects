@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5vh;
+  min-height: 90vh;
+  background: rgb(5, 7, 22);
+}
+
+.container {
+  background: #eeeeee;
+  margin: 0 auto;
+  padding: 0 1.5rem 1.25rem;
+  border: 0.75px solid rgba(59, 59, 59, 0.1529411765);
+  border-radius: 2px;
+  width: 70%;
+  max-width: 800px;
+  text-align: left;
+  color: #3b3b3b;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+.container h1 {
+  text-align: center;
+}
+.container form {
+  outline: 0;
+  height: 35px;
+  margin: 0 0 5%;
+  border: 2px solid #3b3b3b;
+  border-radius: 2.5px;
+}
+.container form input[type=text] {
+  outline: 0;
+  border: none;
+  font-weight: normal;
+  width: 80%;
+  height: 32px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+@media (min-width: 425px) {
+  .container form input[type=text] {
+    width: 85.5%;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 728px) {
+  .container form input[type=text] {
+    width: 87%;
+  }
+}
+@media (min-width: 1024px) {
+  .container form input[type=text] {
+    width: 90%;
+  }
+}
+.container form .add {
+  outline: 0;
+  background-color: #d7e9fb;
+  color: #3b3b3b;
+  cursor: pointer;
+  font-size: 14px;
+  width: 15%;
+  height: 35px;
+  border: 0;
+  border-radius: unset;
+  margin: 0px;
+  float: right;
+}
+.container form .add:hover {
+  background-color: #d2e6fa;
+}
+@media (min-width: 425px) {
+  .container form .add {
+    width: 10.5%;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .container form .add {
+    width: 7.5%;
+  }
+}
+.container ul {
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  margin-top: 60px;
+}
+@media (min-width: 425px) {
+  .container ul {
+    margin-top: 0px;
+  }
+}
+.container ul hr {
+  border-bottom: 0;
+  margin: 15px 0;
+}
+.container ul input[type=checkbox] {
+  width: 30px;
+}
+.container ul input[type=checkbox]:hover {
+  height: 14.25px;
+}
+.container ul .remove {
+  align-items: center;
+  cursor: pointer;
+}
+.container ul .remove:hover {
+  font-size: larger;
+  color: rgb(164, 25, 25);
+  transition: all 0.3s ease;
+  animation: pulse 2.5s 2; /* Add animation property */
+}
+@keyframes pulse {
+  0% {
+    font-size: medium;
+    color: rgb(164, 25, 25);
+  }
+  50% {
+    font-size: larger;
+    color: rgb(209, 29, 29);
+  }
+  100% {
+    font-size: large;
+    color: rgb(164, 25, 25);
+  }
+}
+.container ul .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.container ul li div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container ul li div span {
+  flex-grow: 2;
+}/*# sourceMappingURL=styles.css.map */
