@@ -6,21 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Simple Todo List</title>
         <!-- CSS -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="index.js"></script>
     </head>
     <body>
-        <div class="container">
+        <main class="container">
             <h1>Things I've Gotta Get Done</h1>
-            <ul id="list-items">
-            <!-- Here's where out todo list items will go! -->
-            </ul>
+
             <form class="add-items">
                 <input type="text" class="form-control" id="todo-list-item" placeholder="What do you need to do today?">
-                <button class="add" type="submit">Add to List</button>
+                <button class="add" type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
             </form>
-        </div>
+            
+            <ul id="list-items">
+                <!-- Here's where out todo list items will go! -->
+                <li>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        <span class="completed">Lorem ipsum dolor sit amet consectetur adipisicing elitsdiauosda</span> 
+                        <i class="fa-solid fa-x remove" alt="remove-btn"></i>
+                    </div>
+                    <hr>
+                </li>
+
+                <li>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elitsdiauosda lorem</span> 
+                        <i class="fa-solid fa-x remove" alt="remove-btn"></i>
+                    </div>
+                    <hr>
+                </li>
+
+            </ul>
+        </main>
     </body>
 </html>
