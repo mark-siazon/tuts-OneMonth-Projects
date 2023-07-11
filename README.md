@@ -1,4 +1,6 @@
 # tuts-OneMonth-Projects
+![Repository Image Banner](Repo-Banner.png)
+
 - Welcome! This repository serves as a collection of projects completed during my journey with [OneMonth.com](OneMonth.com) 
 - Huge thanks to the [Github Education Benifits](https://education.github.com/benefits?type=student)
 - Each project focuses on a different topic or technology, allowing me to demonstrate my skills and progress in various areas.
